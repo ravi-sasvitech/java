@@ -4,6 +4,13 @@ public class Student {
 	private int number;
 	private String name;
 	private String branch;
+	
+	public Student(int number, String name, String branch) {
+		super();
+		this.number = number;
+		this.name = name;
+		this.branch = branch;
+	}
 	public int getNumber() {
 		return number;
 	}
