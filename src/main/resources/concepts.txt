@@ -1,0 +1,16 @@
+1. OOPS principles
+
+     
+2. Understand the data and hold the data
+    - Creation of classes and objects
+    
+ 
+ 3. Collections
+ 
+ 
+ 4. Hash Map
+ 
+ 
+ 
+ 5. Exception Handling.
+     
