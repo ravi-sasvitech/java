@@ -7,7 +7,6 @@ import com.sasvi.datatypes.Student;
 
 public class StudentListProgram {
 	
-	
 
 	public static void main(String args[]) {
 		
@@ -19,7 +18,7 @@ public class StudentListProgram {
 		
 		studentsListProgram.printStudnetsInfo(studentsList);
 		
-		studentsListProgram.filterEceStudents(studentsList);
+	//	studentsListProgram.filterEceStudents(studentsList);
 		
 	
 		//sortStudentsByBranch(students);
@@ -31,6 +30,7 @@ public class StudentListProgram {
 	 * @return list
 	 */
 	public List<Student> createStudentsList() {
+		
 		List<Student> students = new ArrayList<Student>();
 		
 		Student kavitha = new Student(1, "kavitha", "cse");
@@ -41,7 +41,7 @@ public class StudentListProgram {
 		students.add(new Student(3, "ram", "ece"));
 		
 		students.add(new Student(4, "sas", "ece"));
-			
+		
 		return students;
 	}
 	
