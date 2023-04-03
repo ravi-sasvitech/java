@@ -3,7 +3,7 @@ package com.sasvi.collections;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import com.sasvi.datatypes.Student;
@@ -21,7 +21,7 @@ public class StudentListProgramTest {
 		// call the method to test
 		boolean result = studentsListProgram.isSudentKavithaPresentUsingBreak(students);
 		// Verify the result
-		Assert.assertTrue( result);
+		Assertions.assertTrue( result);
 	}
 	
 	
