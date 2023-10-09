@@ -17,6 +17,7 @@ import java.util.List;
 
 public class MockData {
 
+  @Deprecated
   public static ImmutableList<Person> getPeople() throws IOException {
     InputStream inputStream = Resources.getResource("people.json").openStream();
     String json = IOUtils.toString(inputStream);
@@ -34,5 +35,7 @@ public class MockData {
     List<Car> cars = new Gson().fromJson(json, listType);
     return ImmutableList.copyOf(cars);
   }
+
+
 
 }
