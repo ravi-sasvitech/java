@@ -5,11 +5,13 @@ import com.sasvi.datatypes.Person;
 import com.sasvi.mockdata.MockData;
 import org.junit.Test;
 
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class MoreExercises {
+public class StreamsExercises {
 
     @Test
     public void getPeopleWhoseNameStartsWithA() throws Exception {
@@ -21,6 +23,26 @@ public class MoreExercises {
                 .collect(Collectors.toList());
         System.out.println(peopleFirstnameWithA);
     }
+
+
+    public void getPeopleWhoseNameStartsWithA2() throws IOException {
+        List<Person> people = MockData.getPeople();
+
+        // output - List
+        // person.getFirstName().startsWith("A") && person.getGender().equals("Male")
+
+        List<String> result = new ArrayList<>();
+
+        for(Person person : people) {
+            if(person.getFirstName().startsWith("A") && person.getGender().equals("Male")) {
+                result.add(person.getFirstName());
+            }
+        }
+        System.out.println(result);
+    }
+
+
+
 
     @Test
     public void getOldAgePeople() throws Exception {
